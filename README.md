@@ -17,5 +17,58 @@ Outputs:
   * Plot of DO and BOD vs Time 
   * Value of BOD_Ultimate
   
+ ## Setup
+
+In order to use the program, you have to clone/download this repository,
+navigate to the local directory and create a virtual environment with:
+
+```
+$ python3 -m venv venv
+```
+
+Then, activate the virtual environment:
+
+```
+For Linux/Mac OS:
+$ source venv/bin/activate
+
+For Windows:
+> venv\Scripts\activate
+```
+
+Finally, install the required libraries for this program with:
+
+```
+$ pip install -r requirements.txt
+``` 
   
-  
+## How to use the program
+
+Input your data for the DO at day 0 and day 5 for Primaryy Effluent (PE) and Secondary Effluent (SE).
+Here a minimum of 3 samples were used. Also add the decimal dilution of your samples in the last column.
+Here a standard 2% and 10% was used for Primary and Secondary Effluent respectively.
+
+```
+BOD5 = pd.DataFrame({
+                   "PE1": [8.68, 1.44, 0.02],
+                   "PE2": [7.33, 1.02, 0.02],
+                   "PE3": [8.48, 1.49, 0.02],
+                   "SE1": [9.39, 5.35, 0.10],
+                   "SE2": [7.82, 2.38, 0.10],
+                   "SE3": [8.42, 4.07, 0.10]},
+                   index = ["DO_0", "DO_5", "Decimal_Dilution"])
+```
+
+This will provide you with the results for Task 1.
+
+Next, you will need to input data for DO and BOD data in mg/L for x number of days. This example shows 10 data points from 0 to 43 days.
+
+```
+BOD_DO = pd.DataFrame({
+                   'Day' : [0,1,2,3,4,5,7,14,21,42],
+                    'DO' : [9.51,9.20,7.59,4.49,2.38,1.92,1.83,0.71,1.21,1.30],
+                   'BOD': [0,16,96,251,357,380,384,440,415,411]})
+```
+
+This will provide you with the results for Task 2.
+
