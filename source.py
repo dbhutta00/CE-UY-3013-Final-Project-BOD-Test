@@ -2,6 +2,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# TASK 1: 5-Day BOD Calculations
+
 # Insert your dataframe for Dissolved Oxygen at Day 0 and Day 5 per primary and secondary treatment 
 # Standard is three samples but can input more
 # Also input the decimal dilution of your samples 
@@ -18,8 +20,6 @@ BOD5 = pd.DataFrame({
                    "SE3": [8.42, 4.07, 0.10]},
                    index = ["DO_0", "DO_5", "Decimal_Dilution"])
 BOD5
-
-# TASK 1: 5-Day BOD Calculations
 
 # BOD_5 (mg/L) = (DO_0 - DO_5) / Decimal Dilution
 
