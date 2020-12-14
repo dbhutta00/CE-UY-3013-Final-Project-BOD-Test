@@ -59,7 +59,7 @@ BOD5 = pd.DataFrame({
                    index = ["DO_0", "DO_5", "Decimal_Dilution"])
 ```
 
-This will provide you with the results for Task 1.
+Run the code and it will provide you with the results for Task 1.
 
 Next, you will need to input data for DO and BOD data in mg/L for x number of days. This example shows 10 data points from 0 to 43 days.
 
@@ -70,5 +70,5 @@ BOD_DO = pd.DataFrame({
                    'BOD': [0,16,96,251,357,380,384,440,415,411]})
 ```
 
-This will provide you with the results for Task 2.
+Run the code and it will provide you with the results for Task 2.
 
