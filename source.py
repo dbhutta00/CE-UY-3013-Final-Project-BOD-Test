@@ -29,3 +29,17 @@ BOD5.loc['BOD_5'] = (BOD5.loc['DO_0'] - BOD5.loc['DO_5']) / BOD5.loc['Decimal_Di
 print(BOD5.loc['BOD_5'])
 BOD5
 
+# Compute average value of BOD_5 for primary effluent
+
+avg_pe_bod = BOD5[['PE1', 'PE2', 'PE3']]
+avg_pe_bod
+BOD_pri = avg_pe_bod.loc['BOD_5'].mean()
+print(BOD_pri)
+
+# Compute average values of BOD_5 for secondary effluent
+
+avg_se_bod = BOD5[['SE1', 'SE2', 'SE3']]
+avg_se_bod
+BOD_sec = avg_se_bod.loc['BOD_5'].mean()
+print(BOD_sec)
+
