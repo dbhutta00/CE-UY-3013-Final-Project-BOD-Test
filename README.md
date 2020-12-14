@@ -19,28 +19,8 @@ Outputs:
   
  ## Setup
 
-In order to use the program, you have to clone/download this repository,
-navigate to the local directory and create a virtual environment with:
-
-```
-$ python3 -m venv venv
-```
-
-Then, activate the virtual environment:
-
-```
-For Linux/Mac OS:
-$ source venv/bin/activate
-
-For Windows:
-> venv\Scripts\activate
-```
-
-Finally, install the required libraries for this program with:
-
-```
-$ pip install -r requirements.txt
-``` 
+In order to use the program, you have to download this repository,
+and run it on any form of python. Change inputs as needed
   
 ## How to use the program
 
