@@ -1,27 +1,25 @@
 # Task 1 
 
-from source import BOD5
+import source as s
 
-print(BOD5)
+print(s.BOD5)
 
-print(BOD5.loc['BOD_5'])
-BOD5
+print(s.BOD5.loc['BOD_5'])
+s.BOD5
 
-print(BOD_pri)
-print(BOD_pri)
+print(s.BOD_pri)
+print(s.BOD_pri)
 
-if BOD_sec > 25:
-  print('Final effluent:', BOD_sec, 'mg/L' ' , ' 'This facility is not in compliance with EPA Clean Water Act!',)
+if s.BOD_sec > 25:
+  print('Final effluent:', s.BOD_sec, 'mg/L' ' , ' 'This facility is not in compliance with EPA Clean Water Act!',)
 else:
-  print('Final effluent:', BOD_sec, 'mg/L' ' , ' 'This facility is in compliance with EPA Clean Water Act.'
+  print('Final effluent:', s.BOD_sec, 'mg/L' ' , ' 'This facility is in compliance with EPA Clean Water Act.'
 
-print(percent_removal,'%')
+print(s.percent_removal,'%')
   
 # Task 2 
 
-from source import BOD_DO
+print(s.BOD_DO)
+s.plt.show()
 
-print(BOD_DO)
-plt.show()
-
-print('BOD_Ultimate:', bod_ultimate, 'mg/L')
+print('BOD_Ultimate:', s.bod_ultimate, 'mg/L')
