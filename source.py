@@ -83,3 +83,8 @@ ax_twin.plot(BOD_DO.Day, BOD_DO["BOD"],color='blue',marker="o")
 ax_twin.set_ylabel('BOD (mg/L)',color='blue',fontsize=14)
 plt.title('DO and BOD vs. Time')
 plt.show()
+
+# Find BOD_Ultimate using max function on BOD column in the data frame
+
+bod_ultimate= BOD_DO["BOD"].max()
+print('BOD_Ultimate:', bod_ultimate, 'mg/L')
