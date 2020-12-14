@@ -50,3 +50,10 @@ if BOD_sec > 25:
 else:
   print('Final effluent:', BOD_sec, 'mg/L' ' , ' 'This facility is in compliance with EPA Clean Water Act.')
   
+# Percent Removal of BOD Calculator
+
+percent_removal = round(((BOD_pri-BOD_sec)/BOD_pri)*100)
+print(percent_removal,'%')
+
+
+  
