@@ -2,7 +2,7 @@
 
 from source import BOD5
 
-BOD5.loc['BOD_5'] = (BOD5.loc['DO_0'] - BOD5.loc['DO_5']) / BOD5.loc['Decimal_Dilution']
+print(BOD5)
 
 print(BOD5.loc['BOD_5'])
 BOD5
