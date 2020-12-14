@@ -67,3 +67,19 @@ BOD_DO = pd.DataFrame({
                    'BOD': [0,16,96,251,357,380,384,440,415,411]})
 BOD_DO
 
+# Plot DO and BOD vs. Time to show relation between them
+# We see that as DO decreases, BOD increases
+
+fig,ax1 = plt.subplots()
+ax_twin = ax1.twinx()
+
+ax1.plot(BOD_DO.Day, BOD_DO.DO, color="red", marker="o")
+
+ax1.set_xlabel('Day',fontsize=14)
+
+ax1.set_ylabel('DO (mg/L)',color='red',fontsize=14)
+
+ax_twin.plot(BOD_DO.Day, BOD_DO["BOD"],color='blue',marker="o")
+ax_twin.set_ylabel('BOD (mg/L)',color='blue',fontsize=14)
+plt.title('DO and BOD vs. Time')
+plt.show()
