@@ -8,7 +8,7 @@ print(s.BOD5.loc['BOD_5'])
 s.BOD5
 
 print(s.BOD_pri)
-print(s.BOD_pri)
+print(s.BOD_sec)
 
 if s.BOD_sec > 25:
   print('Final effluent:', s.BOD_sec, 'mg/L' ' , ' 'This facility is not in compliance with EPA Clean Water Act!',)
