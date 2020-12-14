@@ -22,4 +22,10 @@ BOD5 = pd.DataFrame({
                    index = ["DO_0", "DO_5", "Decimal_Dilution"])
 BOD5
 
+# BOD_5 (mg/L) = (DO_0 - DO_5) / Decimal Dilution
+
+BOD5.loc['BOD_5'] = (BOD5.loc['DO_0'] - BOD5.loc['DO_5']) / BOD5.loc['Decimal_Dilution']
+
+print(BOD5.loc['BOD_5'])
+BOD5
 
