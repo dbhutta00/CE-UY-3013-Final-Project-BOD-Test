@@ -43,3 +43,10 @@ avg_se_bod
 BOD_sec = avg_se_bod.loc['BOD_5'].mean()
 print(BOD_sec)
 
+# Check to see if this wastewater management facility is compliant with EPA Clean Water Act
+
+if BOD_sec > 25:
+  print('Final effluent:', BOD_sec, 'mg/L' ' , ' 'This facility is not in compliance with EPA Clean Water Act!',)
+else:
+  print('Final effluent:', BOD_sec, 'mg/L' ' , ' 'This facility is in compliance with EPA Clean Water Act.')
+  
