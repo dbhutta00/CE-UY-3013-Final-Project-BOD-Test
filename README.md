@@ -20,7 +20,7 @@ Outputs:
  ## Setup
 
 In order to use the program, you have to download this repository,
-and run it on any form of python. Change inputs as needed
+and run it on any platform using of python3. Change inputs as needed
   
 ## How to use the program
 
