@@ -55,5 +55,15 @@ else:
 percent_removal = round(((BOD_pri-BOD_sec)/BOD_pri)*100)
 print(percent_removal,'%')
 
-
+# TASK 2: Ultimate BOD
   
+# Insert your dataframe for Dissolved Oxygen and BOD over nay number of days
+# Sample shows over 42 days with 10 measurements
+# Can change decimal dilution if needed
+
+BOD_DO = pd.DataFrame({
+                   'Day' : [0,1,2,3,4,5,7,14,21,42],
+                    'DO' : [9.51,9.20,7.59,4.49,2.38,1.92,1.83,0.71,1.21,1.30],
+                   'BOD': [0,16,96,251,357,380,384,440,415,411]})
+BOD_DO
+
